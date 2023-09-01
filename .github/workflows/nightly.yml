@@ -9,3 +9,11 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+
+      - name: Update nightly release
+        uses: eine/tip@master
+        with:
+          tag: nightly
+          rm: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: ./src/demo-api/myapp
