@@ -36,6 +36,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: my-release
-          path: '/src/demo-api/bin/Release/net6.0/demo-api.dll' 
+          path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
           
     
