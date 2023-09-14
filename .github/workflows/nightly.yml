@@ -17,7 +17,7 @@ jobs:
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          name: production-files
+          # name: production-files
           # repo: {repo_with_username, e.g. xxx/yyy}
           workflow: main.yml
           path: my_artifact
