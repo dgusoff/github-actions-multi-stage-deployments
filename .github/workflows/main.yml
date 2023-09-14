@@ -37,5 +37,12 @@ jobs:
         with:
           name: my-release
           path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
+
+  deploy-uat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wait-until-time
+    run: date +"%m/%d/%Y"
+
           
     
