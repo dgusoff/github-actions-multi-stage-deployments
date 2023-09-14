@@ -22,4 +22,5 @@ jobs:
           workflow: main.yml
           # path: my_artifact
           search_artifacts: true
+          if_no_artifact_found: fail
 
