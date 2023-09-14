@@ -31,18 +31,10 @@ jobs:
           cd src
           dotnet restore
           dotnet build --configuration Release
-          dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' 
+          dotnet publish -c Release -o 'demo-api/myapp' 
 
       - uses: actions/upload-artifact@v3
         with:
           name: my-release
-          path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
-
-  deploy-uat:
-    runs-on: ubuntu-latest
-    steps:
-      - name: wait-until-time
-    run: date +"%m/%d/%Y"
-
-          
+          path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'        
     
