@@ -20,6 +20,6 @@ jobs:
           # name: production-files
           # repo: {repo_with_username, e.g. xxx/yyy}
           workflow: main.yml
-          path: my_artifact
+          # path: my_artifact
           search_artifacts: true
 
